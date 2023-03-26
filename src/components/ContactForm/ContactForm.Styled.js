@@ -4,7 +4,7 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   gap: 8px;
-  background-color: rgba(0, 128, 128, 0.5);
+  background-color: #FFEBCD;
   border-radius: 10px;
   padding: 15px;
 `;
@@ -15,7 +15,7 @@ export const Input = styled.input`
   border: none;
   :hover,
   :focus {
-    outline: 2px solid teal;
+    outline: 2px solid #FFDEAD;
   }
 `;
 
@@ -31,11 +31,11 @@ export const Button = styled.button`
   font-weight: 600;
   color: #ffffff;
   line-height: 1.2;
-  background-color: teal;
+  background-color: #F4A460;
   cursor: pointer;
   :focus,
   :hover {
-    background-color: rgba(0, 128, 128, 0.8);
+    background-color: #D2691E;
     transform: scale(1.1);
   }
 `;

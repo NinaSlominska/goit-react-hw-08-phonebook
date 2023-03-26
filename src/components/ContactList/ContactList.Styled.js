@@ -11,7 +11,7 @@ export const List = styled.ul`
 export const ListItem = styled.li`
   display: flex;
   gap: 8px;
-  border: 1px solid teal;
+  border: 1px solid #FFDEAD;
   border-radius: 10px;
   align-items: center;
   justify-content: center;
@@ -27,11 +27,11 @@ export const Button = styled.button`
   border-radius: 10px;
   color: #ffffff;
   line-height: 1.2;
-  background-color: teal;
+  background-color: #F4A460;
   cursor: pointer;
   :focus,
   :hover {
-    background-color: tomato;
+    background-color: #A52A2A;
     transform: scale(1.1);
   }
 `;

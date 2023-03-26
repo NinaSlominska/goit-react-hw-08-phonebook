@@ -11,6 +11,6 @@ export const Input = styled.input`
   border: none;
   :hover,
   :focus {
-    outline: 2px solid teal;
+    outline: 2px solid #D2691E;
   }
 `;

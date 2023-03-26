@@ -6,10 +6,10 @@ export const Layout = styled.div`
   margin-left: auto;
   margin-right: auto;
 `;
-// text-aling: center;
+
 export const Section = styled.div`
   text-align: center;
-  background-color: rgba(0, 128, 128, 0.5);
+  background-color: #FFEBCD;
   border-radius: 10px;
   padding: 15px;
   width: 100%;
