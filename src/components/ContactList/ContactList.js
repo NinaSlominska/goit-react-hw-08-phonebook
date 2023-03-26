@@ -1,4 +1,5 @@
-import { List,Button, ListItem} from './ContactList.Styled';
+import { List, Button, ListItem } from './ContactList.Styled';
+import PropTypes from 'prop-types'; 
 export function ContactList({ contacts, onDelete }) {
     return (<List>
         {contacts.map(
@@ -17,3 +18,13 @@ export function ContactList({ contacts, onDelete }) {
         )}
         </List>)
 }
+ContactList.propTypes = {
+  contacts: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      number: PropTypes.string.isRequired,
+    }).isRequired
+  ).isRequired,
+  onDelete: PropTypes.func.isRequired,
+};
