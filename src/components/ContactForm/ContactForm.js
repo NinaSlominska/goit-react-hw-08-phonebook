@@ -17,10 +17,12 @@ export class ContactForm extends Component{
     this.setState({ [name]: value });
   };
     render() {
+       const {name,number} = this.state
         return (<Form onSubmit={this.onSubmit}>
           <Input
                 onChange={this.onChange}
             placeholder="Name"
+            value={name}
             type="text"
             name="name"
             pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
@@ -30,6 +32,7 @@ export class ContactForm extends Component{
           <Input
             onChange={this.onChange}
             placeholder="Number"
+            value={number}
             type="tel"
             name="number"
             pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
