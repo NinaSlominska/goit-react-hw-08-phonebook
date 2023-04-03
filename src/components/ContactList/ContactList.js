@@ -6,21 +6,13 @@ export function ContactList({ contacts, onDelete }) {
         {contacts.map(
             ({ id, name, number }) => {
                 return (
-                    <Contact
+                  <Contact
+                    key={id}
                         id={id}
                         name={name}
                         number={number}
                         onDelete={onDelete}
                     />
-                    
-                    // <ListItem key={id} id={id}>
-                    //     <p>
-                    //         {name}: {number}
-                    //     </p>
-                    //     <Button type="button" onClick={() => onDelete(id)}>
-                    //         Delete
-                    //     </Button>
-                    // </ListItem>
                 );
             }
         )}
