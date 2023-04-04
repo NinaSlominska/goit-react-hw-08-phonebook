@@ -7,7 +7,7 @@ export class ContactForm extends Component{
     event.preventDefault();
     const { name, number } = this.state;
         const key = this.props.addContact(name, number);
-        // console.log (key)
+       
         if (key) {
        this.setState({ name:'', number:''})
    }
