@@ -11,15 +11,18 @@ const startContacts = [
   { id: 'id-4', name: 'Annie Copeland', number: '227-91-26' },
 ];
 export const App = () => {
-  const [contacts, setContacts] = useState(startContacts);
+  const storageContacts = localStorage.getItem('contacts');
+  const [contacts, setContacts] = useState(
+    () => JSON.parse(storageContacts) ?? startContacts
+  );
   const [filter, setFilter] = useState('');
   useEffect(() => {
     localStorage.setItem('contacts', JSON.stringify(contacts));
   }, [contacts]);
-  useEffect(() => {
-    const storageContacts = localStorage.getItem('contacts');
-    setContacts(JSON.parse(storageContacts ?? startContacts));
-  }, []);
+  // useEffect(() => {
+  //   const storageContacts = localStorage.getItem('contacts');
+  //   setContacts(JSON.parse(storageContacts ?? startContacts));
+  // }, []);
 
   const onChange = event => {
     setFilter(event.target.value);
