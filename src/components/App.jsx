@@ -5,6 +5,7 @@ import { Section, Layout } from './Layout.Styled';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchContacts } from 'redux/opertion';
+
 export const App = () => {
   const dispatch = useDispatch();
   useEffect(() => {
