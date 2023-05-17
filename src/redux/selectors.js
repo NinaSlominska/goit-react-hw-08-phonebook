@@ -8,7 +8,9 @@ export const getFilter = state => state.filter.filter;
 
 export const getFilteredContacts = state => {
   const contacts = getContacts(state);
-  const filter = getFilter(state);
+  const filter = getFilter(state).toLowerCase();
 
-  return contacts.filter(contact => contact.name.includes(filter));
+  return contacts.filter(contact =>
+    contact.name.toLowerCase().includes(filter)
+  );
 };

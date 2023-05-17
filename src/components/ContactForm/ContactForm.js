@@ -14,7 +14,9 @@ export const ContactForm = () => {
   const dispatch = useDispatch();
   const onSubmit = event => {
     event.preventDefault();
-    const ok = contacts.find(element => element.name === name);
+    const ok = contacts.find(
+      element => element.name.toLowerCase() === name.toLowerCase()
+    );
     if (ok) {
       alert(`${name} is already in contact`);
       return false;
