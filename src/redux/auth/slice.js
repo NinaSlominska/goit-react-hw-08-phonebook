@@ -38,7 +38,6 @@ const authSlice = createSlice({
         state.isLoggedIn = true;
       })
       .addCase(refreshUser.rejected, state => {
-        alert('kjki,okjj');
         state.isRefreshing = false;
       }),
 });
