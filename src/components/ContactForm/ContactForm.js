@@ -3,7 +3,7 @@ import { Form, Input, Button } from './ContactForm.Styled';
 
 import { useDispatch, useSelector } from 'react-redux';
 // import { addContact } from 'redux/contactsSlice';
-import { addContact } from 'redux/opertion';
+import { addContact } from 'redux/operation';
 import { nanoid } from '@reduxjs/toolkit';
 import { getContacts } from 'redux/selectors';
 

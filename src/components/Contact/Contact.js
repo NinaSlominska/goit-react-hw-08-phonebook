@@ -2,7 +2,7 @@ import { useDispatch } from 'react-redux';
 import { Button, ListItem } from './Contact.Styled';
 import PropTypes from 'prop-types';
 
-import { deleteContact } from 'redux/opertion';
+import { deleteContact } from 'redux/operation';
 export function Contact({ name, number, id }) {
   const dispatch = useDispatch();
   const onDelete = () => {
