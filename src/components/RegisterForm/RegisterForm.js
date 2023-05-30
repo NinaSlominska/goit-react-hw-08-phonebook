@@ -10,6 +10,7 @@ export const RegisterForm = () => {
     e.preventDefault();
     const form = e.currentTarget;
     const { name, email, password } = form.elements;
+
     if (name.value && email.value && password.value) {
       dispatch(
         register({

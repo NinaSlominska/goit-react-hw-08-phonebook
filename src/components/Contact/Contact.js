@@ -8,6 +8,7 @@ export function Contact({ name, number, id }) {
   const onDelete = () => {
     dispatch(deleteContact({ id }));
   };
+  // Дужки 9
   return (
     <ListItem id={id}>
       <p>
