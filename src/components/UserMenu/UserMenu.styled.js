@@ -16,11 +16,11 @@ export const Button = styled.button`
   font-weight: 600;
   color: #ffffff;
   // line-height: 1.2;
-  background-color: teal;
+  background-color: rgb(244, 164, 96);
   cursor: pointer;
   :focus,
   :hover {
-    background-color: rgba(0, 128, 128, 0.8);
+    background-color: rgb(210, 105, 30);
     transform: scale(1.1);
   }
 `;

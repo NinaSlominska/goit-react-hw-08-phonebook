@@ -5,7 +5,7 @@ export const Header = styled.header`
   left: 0;
   z-index: 1;
   width: 100%;
-  background-color: rgba(0, 128, 128, 0.5);
+  background-color: rgb(255, 235, 205);
 `;
 export const Container = styled.div`
   display: flex;

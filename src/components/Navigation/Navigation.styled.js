@@ -7,7 +7,7 @@ export const NavStyled = styled.div`
 export const NavLinkStyled = styled(NavLink)`
   padding: 8px;
   border-radius: 10px;
-  border: solid 2px teal;
+  border: solid 2px rgb(210, 105, 30);
   text-decoration: none;
   color: inherit;
   font-size: 18px;
@@ -17,7 +17,7 @@ export const NavLinkStyled = styled(NavLink)`
   cursor: pointer;
   :focus,
   :hover {
-    background-color: rgba(0, 128, 128, 0.8);
+    background-color: rgb(210, 105, 30);
     transform: scale(1.1);
     color: #ffffff;
   }
